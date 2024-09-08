@@ -1,7 +1,7 @@
 //Permets de connecter mon projet à MongoDB avec mes identfiants 
 const mongoose = require("mongoose");
 const uniqueValidator = require("mongoose-unique-validator");
-const password = process.env.DB_PASSWORD;
+const password = process.env.DB_PASSWORD;//Grâce à dotenv
 const username = process.env.DB_USER;
 const uri = `mongodb+srv://${username}:${password}@cluster0.bbuwmdq.mongodb.net/?retryWrites=true&w=majority`;
 
